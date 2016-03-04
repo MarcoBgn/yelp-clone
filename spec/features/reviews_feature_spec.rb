@@ -10,7 +10,7 @@ feature 'Reviews' do
       create_review
       expect(page).to have_content "Review submitted"
       click_link 'KFC'
-      expect(page).to have_content "So so, 3"
+      expect(page).to have_content "So so, ★★★"
     end
     
     scenario 'Users can only add one review per restaurant' do
@@ -27,7 +27,7 @@ feature 'Reviews' do
       click_link "Sign Out"
       sign_up('test2@ymail.com', 'secretpass', 'secretpass')
       create_review('good', 5)
-      expect(page).to have_content "Average Rating: 3.0"
+      expect(page).to have_content "Average Rating: ★★★"
     end
   end
 end

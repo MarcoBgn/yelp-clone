@@ -3,7 +3,7 @@
 
 <% @restaurant.reviews.each do |review| %>
 <ul>
-  <li> <%= review.comment %>, <%= review.rating %></li>
+  <li> <%= review.comment %>, <%= "\u2605" * review.rating  %></li>
 </ul>
   
 <% end %>
