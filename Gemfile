@@ -25,6 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'devise'
 
+gem 'paperclip'
+
 group :test do
   gem 'rspec-rails'
   gem 'capybara'
